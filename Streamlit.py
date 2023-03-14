@@ -62,11 +62,9 @@ print(x1)
 
 if grafico:
     fig = px.line(data3_selection, x='fecha',y="Dolar Blue",title='Evolucion de Precios', template='plotly_dark')
-    fig.add_shape(type="rect", x0="2022-11-20",y0=280, x1=x1,y1=325,line=dict(color="green"),fillcolor="paleTurquoise", opacity=0.5)
     st.write(fig)
     fig = px.line(data3_selection, x='fecha',y="Dolar Oficial",title='Evolucion de Precios', template='plotly_dark')
     fig.update_traces(line_color="#32CD32")
-    fig.add_shape(type="rect", x0="2022-11-20",y0=160, x1=x1,y1=185,line=dict(color="blue"),fillcolor="paleTurquoise", opacity=0.5)
     st.write(fig)
 
 
